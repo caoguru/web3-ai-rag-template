@@ -1,6 +1,4 @@
-langchain
-langchain-community
-langchain-chroma
-langchain-huggingface
-chromadb
-pypdf
+chromadb==1.5.9
+ollama==0.6.2
+pypdf==6.19.0
+sentence_transformers==6.1.0
