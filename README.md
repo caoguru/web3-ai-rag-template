@@ -1,15 +1,22 @@
-# web3-ai-rag-template
+# Web3 AI RAG Template
 
-A 100% free, fully local RAG (Retrieval-Augmented Generation) template designed to analyze and answer questions based on Web3 project whitepapers.
+A fully local, free-to-run Retrieval-Augmented Generation (RAG) template
+for querying Web3 whitepaper PDFs with an LLM.
 
-## Tech Stack
-- **Framework:** LangChain
-- **Vector Database:** ChromaDB
-- **Embedding Model:** BAAI/bge-small-en-v1.5 (Open-source via HuggingFace)
-- **Local LLM:** Ollama (Llama 3.2)
+## 🎯 Features
+- **PDF ingestion:** Automatically loads every PDF in `docs/` using pypdf.
+- **Local embeddings:** Uses `BAAI/bge-small-en-v1.5` via sentence-transformers.
+- **Local vector store:** ChromaDB with persistent storage.
+- **Local LLM:** Ollama running Llama 3.2 — no API keys, no cost.
+- **Source citations:** Every answer references the originating PDF.
 
-## Prerequisites
-1. Install [Ollama](https://ollama.com).
-2. Download the Llama 3.2 model locally:
-   ```bash
-   ollama run llama3.2
+## 🛠️ Tech Stack
+| Component | Tool |
+|-----------|------|
+| Embedding | BAAI/bge-small-en-v1.5 |
+| Vector DB | ChromaDB |
+| LLM | Ollama + Llama 3.2 |
+| PDF parsing | pypdf |
+| Language | Python 3.10+ |
+
+## 📂 Project Structure
